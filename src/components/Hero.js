@@ -4,98 +4,45 @@ import legal from "../images/legal.png";
 import tax from "../images/tax.png";
 import ca from "../images/ca.png";
 import { Checkmark } from "react-checkmark";
+
 const Hero = () => {
   return (
-    // <section className="relative bg-gray-100 py-16">
-    //   {/* <div className="container mx-auto text-center">
-    //     <h2 className="text-4xl font-bold mb-4">Your Legal Service Platform</h2>
-    //     <p className="mb-8">Providing expert legal and tax services</p>
-    //     <div className="flex justify-center space-x-4">
-    //       <ServiceButton icon="⚖️" text="Legal" />
-    //       <ServiceButton icon="💼" text="Tax" />
-    //       <ServiceButton icon="📊" text="Compliance" />
-    //     </div>
-    //   </div> */}
-    // </section>
-    <div style={{ backgroundImage: `url(${backgroundImage})` }}>
-      {/* Content inside the div (optional) */}
-      <div className="w-6/12  flex flex-col items-start p-20 pb-4">
-        <h1 className="text-6xl text-white font-bold py-4">
-          India's Largest Legal
-        </h1>
-        <h1 className="text-7xl text-white font-bold">SERVICE PLATFORM</h1>
-        <h1 className="py-4 mt-4 text-white">
-          <div className="flex">
-            <Checkmark size="medium" color="#0091ff" />{" "}
-            <h1 className="px-2 text-xl font-bold">
-              {" "}
-              India's leading startup's legal service provider
-            </h1>
-          </div>
-        </h1>
-        <h1 className="py-4 text-white">
-          <div className="flex">
-            <Checkmark size="medium" color="#0091ff" />{" "}
-            <h1 className="px-2 text-xl font-bold">
-              {" "}
-              100% Money back guarantee on professional service
-            </h1>
-          </div>
-        </h1>
-        <h1 className="py-4 text-white">
-          <div className="flex">
-            <Checkmark size="medium" color="#0091ff" />{" "}
-            <h1 className="px-2 text-xl font-bold">
-              {" "}
-              Expertise in Tax Advisory, Compliance & Litigation Service in
-              India
-            </h1>
-          </div>
-        </h1>
+    <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-cover bg-center min-h-screen">
+      <div className="container mx-10 px-4 py-12 md:py-20">
+        <div className="md:w-8/12 lg:w-6/12 flex flex-col items-start">
+          <h1 className="text-4xl md:text-6xl text-white font-bold py-2 md:py-4">
+            India's Largest Legal
+          </h1>
+          <h1 className="text-5xl md:text-7xl text-white font-bold">SERVICE PLATFORM</h1>
+          {["India's leading startup's legal service provider",
+            "100% Money back guarantee on professional service",
+            "Expertise in Tax Advisory, Compliance & Litigation Service in India"].map((text, index) => (
+            <div key={index} className="flex items-center py-2 md:py-4 text-white">
+              <Checkmark size="medium" color="#0091ff" />
+              <h2 className="px-2 text-lg md:text-xl font-bold">{text}</h2>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className=" flex justify-center items-center  mx-24">
-        <div className="w-4/12 flex justify-center">
-          <div className="flex flex-col justify-center items-center">
-            <img src={legal} className="w-14 h-14" />
-            <h1 className="py-3 text-white text-4xl font-bold">Legal</h1>
-            <h1 className="pt-2 text-white text-lg font-semibold">
-              Expert lawyers handle all your documents, contracts,
-            </h1>
-            <h1 className="pb-2 text-white text-lg font-semibold">
-              and registrations.
-            </h1>
+      <div className="flex flex-col md:flex-row justify-center items-center px-4 md:px-24 py-8">
+        {[
+          { icon: legal, title: "Legal", description: "Expert lawyers handle all your documents, contracts, and registrations." },
+          { icon: tax, title: "Tax", description: "Help to file your return with expert in easier way" },
+          { icon: ca, title: "Compliance", description: "Our CA & CS will keep your books in order." }
+        ].map((service, index) => (
+          <div key={index} className="w-full md:w-4/12 flex justify-center mb-8 md:mb-0">
+            <div className="flex flex-col justify-center items-center text-center">
+              <img src={service.icon} className="w-12 h-12 md:w-14 md:h-14" alt={service.title} />
+              <h3 className="py-3 text-white text-3xl md:text-4xl font-bold">{service.title}</h3>
+              <p className="text-white text-base md:text-lg font-semibold px-4">
+                {service.description}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-4/12 flex justify-center">
-          <div className="flex flex-col justify-center items-center">
-            <img src={tax} className="w-14 h-14" />
-            <h1 className="py-3 text-white text-4xl font-bold">Tax</h1>
-            <h1 className="pt-2 text-white text-lg font-semibold"></h1>
-            <h1 className="pb-2 text-white text-lg font-semibold">
-              Help to file your return with expert in easier way
-            </h1>
-          </div>
-        </div>
-        <div className="w-4/12 flex justify-center">
-          <div className="flex flex-col justify-center items-center">
-            <img src={ca} className="w-14 h-14" />
-            <h1 className="py-3 text-white text-4xl font-bold">Compliance</h1>
-            <h1 className="pt-2 text-white text-lg font-semibold"></h1>
-            <h1 className="pb-2 text-white text-lg font-semibold">
-              Our CA & CS will keep your books in order.
-            </h1>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
-
-const ServiceButton = ({ icon, text }) => (
-  <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg flex items-center">
-    <span className="mr-2">{icon}</span>
-    {text}
-  </button>
-);
 
 export default Hero;
