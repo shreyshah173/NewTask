@@ -8,8 +8,8 @@ import { Checkmark } from "react-checkmark";
 const Hero = () => {
   return (
     <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-cover bg-center min-h-screen">
-      <div className="container px-4 py-12 md:py-20 lg:mx-10">
-        <div className="md:w-8/12 lg:w-6/12 flex flex-col items-start">
+      <div className="container px-4 py-12 md:py-20 ">
+        <div className="md:w-8/12 lg:w-6/12 flex flex-col items-start lg:mx-10">
           <h1 className="text-4xl md:text-6xl text-white font-bold py-2 md:py-4">
             India's Largest Legal
           </h1>
