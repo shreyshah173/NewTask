@@ -8,6 +8,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import LatestBlog from "./components/LatestBlog";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
+import Industries from "./components/Industries";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <OurAim />
         <OurServices />
         <WhyChooseUs />
+        <Industries />
         <Testimonial />
         <LatestBlog />
       </main>

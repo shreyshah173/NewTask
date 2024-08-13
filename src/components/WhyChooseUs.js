@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
           className="w-full h-auto object-cover shadow-lg" 
         />
       </div>
-
+        
 
     </div>
   );
