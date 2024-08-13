@@ -2,70 +2,49 @@ import React from "react";
 
 export default function Testimonial() {
   return (
-    <section className="overflow-hidden bg-gray-50 py-12 md:py-20 lg:py-24">
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <svg
-          className="absolute top-full right-full translate-x-1/3 -translate-y-1/4 transform lg:translate-x-1/2 xl:-translate-y-1/2"
-          width={404}
-          height={404}
-          fill="none"
-          viewBox="0 0 404 404"
-          role="img"
-          aria-labelledby="svg-workcation"
-        >
-          <title id="svg-workcation">Workcation</title>
-          <defs>
-            <pattern
-              id="ad119f34-7694-4c31-947f-5c9d249b21f3"
-              x={0}
-              y={0}
-              width={20}
-              height={20}
-              patternUnits="userSpaceOnUse"
-            >
-              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width={404} height={404} fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)" />
-        </svg>
-
-        <div className="relative">
-          <img
-            className="mx-auto h-8"
-            src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
-            alt="Workcation"
-          />
-          <blockquote className="mt-10">
-            <div className="mx-auto max-w-3xl text-center text-2xl font-medium leading-9 text-gray-900">
-              <p>
-                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
-                alias molestiae. Numquam corrupti in laborum sed rerum et corporis.&rdquo;
-              </p>
+    <section class="text-gray-600 body-font">
+      <div>
+        <h2 className="text-4xl font-bold text-center text-[#160c51]">
+          Testimonials
+        </h2>
+      </div>
+      <div className=" w-full flex justify-center mb-6">
+        <div className="w-3/12 border-t-0 border-4 border-l-0 border-r-0 border-yellow-400 h-4"></div>
+      </div>
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://casumityadav.com/wp-content/uploads/2024/04/ankit-sharma.jpeg.256x256_q100_crop-smart.jpg.webp" />
+              <p class="leading-relaxed">
+                First I really thank to Sumit Yadav & Co team members | applied for ISO and IAF certification process. They have submitted within 1 day itself. Once again I thank to the All team members.          </p>
+              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+              <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Mohit Kumar</h2>
+              <p class="text-gray-500">Founder of IQRA EDUCATIONAL INSTITUTE</p>
             </div>
-            <footer className="mt-8">
-              <div className="md:flex md:items-center md:justify-center">
-                <div className="md:flex-shrink-0">
-                  <img
-                    className="mx-auto h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                  <div className="text-base font-medium text-gray-900">Judith Black</div>
-
-                  <svg className="mx-1 hidden h-5 w-5 text-indigo-600 md:block" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M11 0h3L9 20H6l5-20z" />
-                  </svg>
-
-                  <div className="text-base font-medium text-gray-500">CEO, Workcation</div>
-                </div>
-              </div>
-            </footer>
-          </blockquote>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://casumityadav.com/wp-content/uploads/2024/04/1600021149451.jpeg.webp" />
+              <p class="leading-relaxed">Absolutely amazed with the helping nature of Ashutosh and Amit sir during the registration process of KANGLEI ADVENTURE PRIVATE LIMITED. Thank you for the endless support which has made the entire process seamless and efficient. The services of Sumit Yadav & Co are highly recommended.</p>
+              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+              <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Ravi Sharma</h2>
+              <p class="text-gray-500">MD of KANGLEI ADVENTURE PRIVATE LIMITED</p>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 p-4">
+            <div class="h-full text-center">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://casumityadav.com/wp-content/uploads/2024/04/images-1.jpeg" />
+              <p class="leading-relaxed">Flexible, very flexible interaction and work Quality is extremely satisfied.</p>
+              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+              <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Parvinder singh</h2>
+              <p class="text-gray-500">Founder of Anexy Pvt Limited</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
   )
 }
 
