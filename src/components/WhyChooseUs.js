@@ -55,9 +55,17 @@ const WhyChooseUs = () => {
           />
         </div>
       </div>
-      <div className="m-32">
+      {/* <div className="m-32">
         <img src={section} />
+      </div> */}
+      <div className="m-8 lg:m-32">
+        <img
+          src={section}
+          className="w-full h-auto object-cover shadow-lg" 
+        />
       </div>
+
+
     </div>
   );
 };
