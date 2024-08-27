@@ -191,31 +191,6 @@ const GstForm = () => {
           </div>
         </div>
       </div>
-      <div className=" mx-[8%] p-6 text-center flex flex-col items-center bg-background text-foreground">
-        <Heading title={"Income Tax Return Filing"} />
-        <p className="text-lg text-muted-foreground mb-4">
-          Every responsible Indian citizen is required by law to file income
-          taxes with the government. However, you may file your income tax
-          online using today’s technologies. This procedure is quick and
-          precise, with no time limits.
-        </p>
-        <p className="text-lg text-muted-foreground">
-          However, submitting an income tax return in India via the official
-          website necessitates the completion of ITR forms. Individuals must
-          complete a different ITR form than salaried employees. This is an
-          important activity since the income tax agency has a variety of
-          documents designated ITR 1 through ITR 7. Each form serves a unique
-          purpose and belongs to a distinct category.
-        </p>
-      </div>
-      <div className="flex flex-col items-center ">
-        <Heading
-          title={"Documents Required for ITR Filing Online"}
-          para={
-            "To fulfil IT filing in India, the following documents are necessary"
-          }
-        />
-      </div>
     </div>
   );
 };
